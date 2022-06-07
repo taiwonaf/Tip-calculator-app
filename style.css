@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 main > h1 {
@@ -231,4 +232,60 @@ input[type=number]::-webkit-outer-spin-button {
 .attribution {
     font-size: 14px;
     margin-top: 20px;
+}
+
+@media (max-width: 970px) {
+body {
+    height: 1100px;
+    width: 100%;
+    justify-content: flex-start;
+    padding: 0px 0px 0px 0px;
+}
+
+main > h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    letter-spacing: 5px;
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    flex-direction: column;
+}
+
+.right {
+    width: 100%;
+}
+
+.left {
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.tip-btns {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.attribution {
+    font-size: 12px;
+}
+
+.tip {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.right a {
+    margin-top: 30px;
+}
+
+.tip-figure, .total-figure {
+    font-size: 36px;
+}
+
 }
