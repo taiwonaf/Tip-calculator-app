@@ -22,26 +22,26 @@
         <div class="bill">
           <h2>Bill</h2>
           <div class="input">
-            <input type="number">
+            <input id="bill" type="number">
             <h2>$</h2>
           </div>
         </div>
         <div class="select-tip">
           <h2>Select Tip %</h2>
-          <div class="tip-btns">
-            <a href="#">5%</a>
-            <a href="#">10%</a>
-            <a href="#">15%</a>
-            <a href="#">25%</a>
-            <a href="#">50%</a>
-            <input id="custom" type="number" placeholder="Custom">
+          <div class="tip-btns" id="tips">
+            <a class="5%" href="#">5%</a>
+            <a class="10%" href="#">10%</a>
+            <a class="15%" href="#">15%</a>
+            <a class="25%" href="#">25%</a>
+            <a class="50%" href="#">50%</a>
+            <input id="custom" class="custom" type="number" placeholder="Custom">
           </div>
         </div>
         <div class="people">
           <h2>Number of People</h2>
           <div class="input">
             <img src="./images/icon-person.svg" alt="">
-            <input type="text">
+            <input type="text" id="people">
             <p id="error">Can't be zero</p>
           </div>
         </div>
@@ -53,7 +53,7 @@
               <h2>Tip Amount</h2>
               <p>/ person</p>
             </div>
-            <div class="tip-figure">
+            <div class="tip-figure" id="tip-figure">
               $0.00
             </div>
           </div>
@@ -62,7 +62,7 @@
               <h2>Total</h2>
               <p>/ person</p>
             </div>
-            <div class="total-figure">
+            <div class="total-figure" id="total-figure">
               $0.00
             </div>
           </div>
@@ -78,5 +78,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://twitter.com/tee_script">Nafiu Taiwo</a>.
   </div>
+  <script src="index.js"></script>
 </body>
 </html>
