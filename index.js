@@ -3,6 +3,15 @@ const bill = document.getElementById("bill");
 const tipPerPerson = document.getElementById("tip-figure");
 const totalPerPerson = document.getElementById("total-figure");
 const tips = document.getElementById("tips");
+const resetBtn = document.getElementById("resetBtn");
+
+
+resetBtn.addEventListener("click", () => {
+    bill.value = "";
+    people.value = "";
+    tipPerPerson.textContent = `$0.00`;
+    totalPerPerson.textContent = `$0.00`;
+})
 
 bill.addEventListener("keyup", () => {
     tips.addEventListener("click", (e) => {
@@ -35,5 +44,3 @@ bill.addEventListener("keyup", () => {
         }
     })
 })
-
-
